@@ -8,6 +8,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     <title>DevStagram - @yield('titulo')</title>
+    @livewireStyles
 </head>
 <body class="bg-gray-100">
     <header class="p-5 border-b bg-white shadow">
@@ -66,5 +67,6 @@
         {{ now()->year }}
     </footer>
 
+    @livewireScripts
 </body>
 </html>
